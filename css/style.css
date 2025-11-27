@@ -1,0 +1,294 @@
+/* resetea el html */
+* {
+    margin: 0;
+    padding: 0;
+    /* toma como tamaño del elemento el borde */
+    box-sizing: border-box; 
+}
+/* 1rem = 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Caveat Brush", cursive;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    /* el body ocupa toda la pantalla */
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3rem;
+    /* toma todo el espacio disponible, es el mas grande */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color:#F5F5F5;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    color: #F5F5F5;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #D4AF37;
+    color: #0D0D0D;
+    border: none;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header {
+    background-color: #0D0D0D; 
+    color: #D4AF37;           
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-log {
+    margin-left: 1.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: inherit;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+footer {
+    background-color: #0D0D0D;
+    color: #F5F5F5;           
+    border-top: 0.1rem solid #D4AF37;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul li {
+    padding: 2rem;
+}
+
+.titulo-home {
+    margin: 3rem 0;
+}
+
+.titulo-producto {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+video {
+    width: auto;            
+    height: 90vh;           
+    aspect-ratio: 9 / 16;    
+    object-fit: cover;       
+    border: 0.2rem solid #D4AF37; 
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem rgba(212, 175, 55, 0.3);
+}
+
+.parrafo {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-tarjeta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tarjeta {
+    background-color: #1A1A1A;
+    color: #F5F5F5;
+    width: 30rem;
+    padding-bottom: 2rem;
+    border: 0.1rem solid #D4AF37;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 2rem rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta img {
+    width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    header, 
+    footer,
+    .header-nav ul  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav ul li a {
+        padding: 1rem;
+        font-size: 2.4rem;
+    }
+
+
+    .contenedor-tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .div-log, .header-nav {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .parrafo {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .tarjeta {
+        width: 90%;
+        max-width: 40rem;
+    }
+
+    /* contacto */
+    .formulario {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .grupo-input,
+    .formulario div {
+        max-width: 100%;
+    }
+
+    .formulario label {
+        font-size: 1.4rem;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .formulario .btn {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+}
+
+/* CONTACTO */
+
+.titulo-contacto {
+    margin: 2rem 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;   
+    width: 100%;
+    max-height: 60rem;           
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.grupo-input,
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60rem;            
+}
+
+.formulario label {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #D4AF37;           
+}
+
+.formulario textarea, .formulario input {
+    width: 100%;
+    background-color: #1A1A1A;   
+    color: #F5F5F5;
+    border: 0.1rem solid #D4AF37;
+    border-radius: 0.6rem;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al enfocar */
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #D4AF37; 
+    box-shadow: 0 0 0.8rem rgba(212, 175, 55, 0.4); 
+    background-color: #111111; 
+}
+
+.formulario textarea {
+    min-height: 15rem;
+    resize: vertical;
+}
+
+.titulo-otros {
+    color: aqua;
+}

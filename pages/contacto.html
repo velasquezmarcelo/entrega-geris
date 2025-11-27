@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Geris Drugstore</title>
+</head>
+<body>
+    <header>
+        <div class="div-log">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo del negocio" width="100">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo-contacto">Contactanos</h1>
+        <form
+            class="formulario"
+            action="https://formspree.io/f/mgvndnde"
+            method="POST"
+            >
+            <div class="grupo-input">
+                <label for="email"> Email:</label>
+                <input id="email" type="email" name="email"/>
+            </div>
+            <div class="grupo-input">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message"></textarea>
+            </div>
+            <!-- your other form fields go here -->
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <p>Nuestras redes</p>
+        <nav>
+            <ul>
+                <il>Instagram</il>
+                <il>Facebook</il>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
