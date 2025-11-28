@@ -1,0 +1,6 @@
+[
+    {"id": "1", "nombre": "Producto 1", "precio": "$6000", "img": "img/baileys.jpg" },
+    {"id": "2", "nombre": "Producto 2", "precio": "$5000", "img": "img/daikiriduo.jpg" },
+    {"id": "3", "nombre": "Producto 3", "precio": "$5000", "img": "img/malibu.jpg" },
+    {"id": "4", "nombre": "Producto 4", "precio": "$5000", "img": "img/fernet.jpg" }
+]
