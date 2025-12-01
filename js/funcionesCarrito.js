@@ -7,7 +7,7 @@ export const agregarAlCarrito = (producto) => {
     carrito.push(producto);
     guardarCarrito(carrito);
     actualizarContador(carrito);
-    mostrarMensaje("Producto agregado")
+    mostrarMensaje("Producto agregado");
 }
 
 export const eliminarProducto = (id) => {
@@ -15,11 +15,11 @@ export const eliminarProducto = (id) => {
     carrito.splice(id, 1);
     guardarCarrito(carrito);
     actualizarContador(carrito);
-    mostrarMensaje("Producto eliminado")
+    mostrarMensaje("Producto eliminado");
 }
 
 export const vaciarCarrito = () => {
-    vaciarCarritoStorage()
-    actualizarContador([])
-    mostrarMensaje("Carrito vacio")
+    vaciarCarritoStorage();
+    actualizarContador([]);
+    mostrarMensaje("Carrito vacio");
 }

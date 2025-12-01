@@ -36,7 +36,7 @@ const tarjetaCarrito = () => {
 
         const btnEliminar = document.createElement("button");
         btnEliminar.classList.add("btn");
-        btnEliminar.classList.add("btn-eliminar");
+        btnEliminar.classList.add("btn-eliminar-carrito");
         btnEliminar.textContent = "Eliminar producto";
 
         btnEliminar.addEventListener("click", () => {
@@ -65,4 +65,6 @@ const tarjetaCarrito = () => {
     divAcciones.appendChild(btnVaciar);
 };
 
-document.addEventListener("DOMContentLoaded", () => {tarjetaCarrito});
+document.addEventListener("DOMContentLoaded", () => {
+    tarjetaCarrito();
+});
