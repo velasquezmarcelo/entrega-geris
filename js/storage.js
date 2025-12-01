@@ -1,6 +1,6 @@
 const KEY = "carrito"
 
-export const guardarCarrito = () => {
+export const guardarCarrito = (carrito) => {
     localStorage.setItem(KEY, JSON.stringify(carrito))
 }   
 

@@ -292,3 +292,13 @@ video {
 .titulo-otros {
     color: aqua;
 }
+
+.mensaje-carrito-vacio {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.acciones-carrito {
+    margin-top: 2rem;
+}
